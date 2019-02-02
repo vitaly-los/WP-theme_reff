@@ -10,6 +10,12 @@ functions.php   the first file that load in themes folder
 wp_head()       Action Hook: Prints scripts or data in the head tag on the front end.
 wp_footer()     Action Hook: Prints scripts or data before the closing body tag on the front end.
 
+wp_enqueue_script('jquery');    jquery are included in wp by default, by use outdate jqueri's ver. 1.4
+
+
+
+
+
 
 /* -- Config -- */
 
