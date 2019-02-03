@@ -11,11 +11,9 @@ Text Domain: reff
 
 .card {
     margin-bottom: 30px;
-    outline: solid red 1px;
 }
 
 img {
-    outline: solid aqua 1px;
     max-width: 100%;
     height: auto;
 }
