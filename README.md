@@ -27,6 +27,12 @@ add_image_size()        Register a new image size
 
 the_posts_pagination()      Add pagination
 
+bloginfo()      Display information about the current site
+home_url()      Get home url, use with echo
+
+wp_get_document_title()  get title, use it between tag <title>
+
+
 /* -- Config -- */
 
 define('FS_METHOD', 'direct'); Allow install plugins using filesystem instead of FTP parameters
