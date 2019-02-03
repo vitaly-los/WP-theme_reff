@@ -30,8 +30,9 @@ the_posts_pagination()      Add pagination
 bloginfo()      Display information about the current site
 home_url()      Get home url, use with echo
 
-wp_get_document_title()  get title, use it between tag <title>
 
+wp_get_document_title()             get title, use it between tag <title>
+add_theme_support('title-tag');     delete <title> for using this hook 
 
 /* -- Config -- */
 
