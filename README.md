@@ -13,6 +13,8 @@ wp_footer()     Action Hook: Prints scripts or data before the closing body tag 
 wp_enqueue_script('jquery');    jquery are included in wp by default, by use outdate jqueri's ver. 1.4
 
 
+have_posts()    Whether current WP query has results to loop over
+    
 
 
 
