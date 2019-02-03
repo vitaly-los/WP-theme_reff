@@ -15,9 +15,10 @@ wp_enqueue_script('jquery');    jquery are included in wp by default, by use out
 
 have_posts()    Whether current WP query has results to loop over
     
-
-
-
+the_title()         dispaly or return title of the current post. Only in Loop
+the_content()       dispaly or return content of the current post. Only in Loop
+the_excerpt()       display first 55 characters of the current exerpt, or it can be added on admin page 
+the_permalink()     dispaly the premalink of the current post
 
 /* -- Config -- */
 

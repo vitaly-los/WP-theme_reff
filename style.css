@@ -8,3 +8,15 @@ License: GNU General Public License v2 or later
 Description: It is a cool tutorial theme for wordpress
 Text Domain: reff
 */
+
+.card {
+    margin-bottom: 30px;
+    outline: solid red 1px;
+}
+
+img {
+    outline: solid aqua 1px;
+    max-width: 100%;
+    height: auto;
+}
+
