@@ -5,7 +5,11 @@
         <?php while (have_posts()): the_post(); ?>
             <div class="com-md-12">
                 <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <?php if (has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail(); ?>
+                    <?php else : ?>
+                        <img src="https://picsum.photos/1277/603" alt="">
+                    <?php endif; ?>
                     <div class="card-body">
                         <h1 class="card-title"><?php the_title(); ?></h1>
                         <p class="card-text"><?php the_content(''); ?></p>

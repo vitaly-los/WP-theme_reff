@@ -7,7 +7,11 @@
 
                 <div class="com-md-12">
                     <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <?php the_post_thumbnail('thumbnail'); ?>
+                        <?php else : ?>
+                            <img src="https://picsum.photos/150/150" width="150" height="150" alt="">
+                        <?php endif; ?>
                         <div class="card-body">
                             <h5 class="card-title"><?php the_title(); ?></h5>
                             <p class="card-text"><?php the_excerpt(); ?></p>

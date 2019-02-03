@@ -20,6 +20,12 @@ the_content()       dispaly or return content of the current post. Only in Loop
 the_excerpt()       display first 55 characters of the current exerpt, or it can be added on admin page 
 the_permalink()     dispaly the premalink of the current post
 
+add_theme_support()     Register theme support for a given feature. 
+the_post_thumbnail()    Display the post thumbnail. As param can be given a size
+has_post_thumbnail()    Check if post has thumbnail
+add_image_size()        Register a new image size
+
+
 /* -- Config -- */
 
 define('FS_METHOD', 'direct'); Allow install plugins using filesystem instead of FTP parameters
