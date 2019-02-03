@@ -7,20 +7,26 @@
 
                 <div class="com-md-12">
                     <div class="card">
-                        <?php if (has_post_thumbnail()) : ?>
-                            <?php the_post_thumbnail('thumbnail'); ?>
-                        <?php else : ?>
-                            <img src="https://picsum.photos/150/150" width="150" height="150" alt="">
-                        <?php endif; ?>
-                        <div class="card-body">
+                        <div class="card-header">
                             <h5 class="card-title"><?php the_title(); ?></h5>
+                        </div>
+                        <div class="card-body">
+
+                            <?php if (has_post_thumbnail()) : ?>
+                                <?php the_post_thumbnail('thumbnail', ['class' => 'float-left mr-4']); ?>
+                            <?php else : ?>
+                                <img src="https://picsum.photos/150/150" width="150" height="150" class="float-left mr-4" alt="">
+                            <?php endif; ?>
                             <p class="card-text"><?php the_excerpt(); ?></p>
+                        </div>
+                        <div class="card-footer">
                             <a href="<?php the_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                 </div>
 
             <?php endwhile; ?>
+            <?php the_posts_pagination(['type' => 'list']); ?>
         <?php else : ?>
             <p>No post's yet...</p>
         <?php endif; ?>

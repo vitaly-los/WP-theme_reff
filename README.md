@@ -25,6 +25,7 @@ the_post_thumbnail()    Display the post thumbnail. As param can be given a size
 has_post_thumbnail()    Check if post has thumbnail
 add_image_size()        Register a new image size
 
+the_posts_pagination()      Add pagination
 
 /* -- Config -- */
 
