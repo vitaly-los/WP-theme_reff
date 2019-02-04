@@ -25,6 +25,10 @@ function reff_setup()
 {
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
+    add_theme_support('custom-logo', [
+        'width' => '150',
+        'height' => '40',
+    ]);
 
     register_nav_menus([
         'header_menu' => 'My header menu',

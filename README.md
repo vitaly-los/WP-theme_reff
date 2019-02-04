@@ -36,16 +36,13 @@ add_theme_support('title-tag');     delete <title> for using this hook
 
 
 register_nav_menus()   Registers navigation menu locations for a theme.
-
 wp_nav_menu()       Displays a navigation menu
-
 get_sidebar()       Load sidebar template. use with add_action('widget_init', 'my_func');
-
 dynamic_sidebar()   Display dynamic sidebar.
-
 is_active_sidebar()    Determines whether a sidebar is in use. 
 
-
+the_custom_logo()       Displays a custom logo, linked to home.
+has_custom_logo()       Determines whether the site has a custom logo.
 
 
 /* -- Config -- */
