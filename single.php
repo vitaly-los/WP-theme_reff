@@ -2,21 +2,26 @@
 
 <div class="container">
     <div class="row">
-        <?php while (have_posts()): the_post(); ?>
-            <div class="com-md-12">
-                <div class="card">
-                    <?php if (has_post_thumbnail()) : ?>
-                        <?php the_post_thumbnail(); ?>
-                    <?php else : ?>
-                        <img src="https://picsum.photos/1277/603" alt="">
-                    <?php endif; ?>
-                    <div class="card-body">
-                        <h1 class="card-title"><?php the_title(); ?></h1>
-                        <p class="card-text"><?php the_content(''); ?></p>
+        <div class="col">
+            <div class="row">
+                <?php while (have_posts()): the_post(); ?>
+                    <div class="com-md-12">
+                        <div class="card">
+                            <?php if (has_post_thumbnail()) : ?>
+                                <?php the_post_thumbnail(); ?>
+                            <?php else : ?>
+                                <img src="https://picsum.photos/1277/603" alt="">
+                            <?php endif; ?>
+                            <div class="card-body">
+                                <h1 class="card-title"><?php the_title(); ?></h1>
+                                <p class="card-text"><?php the_content(''); ?></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                <?php endwhile; ?>
             </div>
-        <?php endwhile; ?>
+        </div>
+        <?php get_sidebar(); ?>
         <?php get_footer(); ?>
     </div>
 </div>
