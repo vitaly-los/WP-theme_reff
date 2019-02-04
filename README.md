@@ -34,6 +34,13 @@ home_url()      Get home url, use with echo
 wp_get_document_title()             get title, use it between tag <title>
 add_theme_support('title-tag');     delete <title> for using this hook 
 
+
+register_nav_menus()   Registers navigation menu locations for a theme.
+
+wp_nav_menu()       Displays a navigation menu
+
+
+
 /* -- Config -- */
 
 define('FS_METHOD', 'direct'); Allow install plugins using filesystem instead of FTP parameters

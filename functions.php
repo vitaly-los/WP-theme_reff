@@ -23,6 +23,11 @@ function reff_setup()
 {
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
+
+    register_nav_menus([
+        'header_menu' => 'My header menu',
+        'footer_menu' => 'My footer menu'
+    ]);
 }
 
 add_action('after_setup_theme', 'reff_setup');
