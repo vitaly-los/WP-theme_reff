@@ -39,6 +39,13 @@ register_nav_menus()   Registers navigation menu locations for a theme.
 
 wp_nav_menu()       Displays a navigation menu
 
+get_sidebar()       Load sidebar template. use with add_action('widget_init', 'my_func');
+
+dynamic_sidebar()   Display dynamic sidebar.
+
+is_active_sidebar()    Determines whether a sidebar is in use. 
+
+
 
 
 /* -- Config -- */

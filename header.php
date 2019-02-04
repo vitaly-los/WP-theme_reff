@@ -18,6 +18,7 @@
                 'theme_location' => 'header_menu',
                 'container_class' => 'collapse navbar-collapse',
                 'menu_class' => 'navbar-nav mr-auto',
+                'container_id' => 'navbarSupportedContent',
                 'walker' => new Reff_Menu,
             ]);
             ?>

@@ -51,3 +51,14 @@ function my_navigation_template($template, $class)
 the_posts_pagination(array(
     'end_size' => 2,
 ));
+
+function reff_widgets_init()
+{
+    register_sidebar([
+        'name' => 'Sidebar for right',
+        'id' => 'right-sidebar',
+        'description' => 'Place for right sidebar',
+    ]);
+}
+
+add_action('widgets_init', 'reff_widgets_init');
