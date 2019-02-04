@@ -44,6 +44,7 @@ is_active_sidebar()    Determines whether a sidebar is in use.
 the_custom_logo()       Displays a custom logo, linked to home.
 has_custom_logo()       Determines whether the site has a custom logo.
 
+ body_class()   Display the classes for the body element. For custom background color
 
 /* -- Config -- */
 

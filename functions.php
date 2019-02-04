@@ -30,6 +30,12 @@ function reff_setup()
         'height' => '40',
     ]);
 
+    add_theme_support('custom-background', [
+        'default-color' => 'ffffff',
+            // 'default-image' => get_template_directory_uri() . '/assets/images/background.png',
+    ]);
+
+
     register_nav_menus([
         'header_menu' => 'My header menu',
         'footer_menu' => 'My footer menu'

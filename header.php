@@ -7,7 +7,8 @@
 
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <?php if (has_custom_logo()) : the_custom_logo(); ?>
             <?php else: ?>
