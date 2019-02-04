@@ -20,6 +20,7 @@ function reff_scripts($param)
 }
 
 add_action('wp_enqueue_scripts', 'reff_scripts');
+is_front_page();
 
 function reff_setup()
 {
@@ -33,6 +34,12 @@ function reff_setup()
     add_theme_support('custom-background', [
         'default-color' => 'ffffff',
             // 'default-image' => get_template_directory_uri() . '/assets/images/background.png',
+    ]);
+
+    add_theme_support('custom-header', [
+        'default-image' => get_template_directory_uri() . '/assets/images/header.jpg',
+        'width' => '2000',
+        'height' => '1200',
     ]);
 
 

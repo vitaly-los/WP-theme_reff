@@ -28,8 +28,8 @@ add_image_size()        Register a new image size
 the_posts_pagination()      Add pagination
 
 bloginfo()      Display information about the current site
-home_url()      Get home url, use with echo
-
+home_url()      Get home url, use with echo. If you set a static page for the front page, it return false
+is_front_page() Determines whether the query is for the front page of the site.
 
 wp_get_document_title()             get title, use it between tag <title>
 add_theme_support('title-tag');     delete <title> for using this hook 
@@ -44,7 +44,9 @@ is_active_sidebar()    Determines whether a sidebar is in use.
 the_custom_logo()       Displays a custom logo, linked to home.
 has_custom_logo()       Determines whether the site has a custom logo.
 
- body_class()   Display the classes for the body element. For custom background color
+body_class()   Display the classes for the body element. For custom background color in tag <body>
+
+get_custom_header()     Get the header image data.
 
 /* -- Config -- */
 

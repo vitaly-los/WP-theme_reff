@@ -8,7 +8,7 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-
+        <div class="header-image" style="background: url(<?php echo get_custom_header()->url; ?>) center no-repeat; height: 50vh;"></div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <?php if (has_custom_logo()) : the_custom_logo(); ?>
             <?php else: ?>
