@@ -18,6 +18,7 @@
                 'theme_location' => 'header_menu',
                 'container_class' => 'collapse navbar-collapse',
                 'menu_class' => 'navbar-nav mr-auto',
+                'walker' => new Reff_Menu,
             ]);
             ?>
             <!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">

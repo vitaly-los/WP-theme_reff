@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/Reff_Menu.php';
+
 /*
  * Include styles and scripts
  */
