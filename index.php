@@ -35,6 +35,18 @@
         </div>
         <?php get_sidebar(); ?>
 
-        <?php get_footer(); ?>
+
     </div>
 </div>
+
+<?php
+$query = new WP_Query('cat=27,29&posts_per_page=5');
+if ($query->have_posts()) : while ($query->have_posts()): $query->the_post();
+        ?>
+        <h3><?php the_title(); ?></h3>
+        <?php
+    endwhile;
+endif;
+?>
+
+<?php get_footer(); ?>

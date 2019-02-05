@@ -48,6 +48,8 @@ body_class()   Display the classes for the body element. For custom background c
 
 get_custom_header()     Get the header image data.
 
+WP_Query()      Constructor. Sets up the WordPress query, if parameter is not empty
+
 /* -- Config -- */
 
 define('FS_METHOD', 'direct'); Allow install plugins using filesystem instead of FTP parameters
