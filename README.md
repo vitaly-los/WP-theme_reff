@@ -50,6 +50,12 @@ get_custom_header()     Get the header image data.
 
 WP_Query()      Constructor. Sets up the WordPress query, if parameter is not empty
 
+define('WP_DEBUG', true);     // включение дебаг режима
+define('WP_DEBUG_LOG', true); // true - логирование ошибок в файл /wp-content/debug.log
+define('WP_DEBUG_DISPLAY', false); // false - отключает показ ошибок на экране
+define('SCRIPT_DEBUG', true); // используем полные версии JS и CSS файлов движка
+
+
 /* -- Config -- */
 
 define('FS_METHOD', 'direct'); Allow install plugins using filesystem instead of FTP parameters
